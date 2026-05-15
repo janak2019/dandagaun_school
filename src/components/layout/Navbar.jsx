@@ -20,7 +20,7 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-white shadow-lg py-3" : "bg-zinc-600 py-4"
+        scrolled ? "bg-transparent shadow-lg py-3" : "bg-zinc-600 py-4"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
