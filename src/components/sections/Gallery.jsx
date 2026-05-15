@@ -14,7 +14,7 @@ const galleryImages = [
       <section id="gallery" className="py-24 bg-emerald-50">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-center mb-16">
-            School Gallery
+            फोटो ग्यालरी
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8">
