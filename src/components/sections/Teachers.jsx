@@ -1,30 +1,31 @@
 export default function Teachers() {
   const teachers = [
     {
-      name: "Ram Sharma",
-      subject: "Mathematics",
+      name: "राम शर्मा",
+      subject: "गणित",
     },
     {
-      name: "Sita KC",
-      subject: "Science",
+      name: "सीता केसी",
+      subject: "विज्ञान",
     },
     {
-      name: "Hari Adhikari",
-      subject: "English",
+      name: "हरि अधिकारी",
+      subject: "अंग्रेजी",
     },
     {
-      name: "Nabin Thapa",
-      subject: "Computer",
+      name: "नवीन थापा",
+      subject: "कम्प्युटर",
     },
   ];
 
   return (
-   <>
-    {/* TEACHERS SECTION */}
+    <>
+      {/* शिक्षक सेक्शन */}
       <section id="teachers" className="py-24 bg-indigo-50">
         <div className="max-w-7xl mx-auto px-6">
+          
           <h2 className="text-4xl font-bold text-center mb-16">
-            Our Teachers
+            हाम्रा शिक्षकहरू
           </h2>
 
           <div className="grid md:grid-cols-4 gap-8">
@@ -42,13 +43,14 @@ export default function Teachers() {
                 </h3>
 
                 <p className="text-gray-600 mt-2">
-                  {teacher.subject} Teacher
+                  {teacher.subject} शिक्षक
                 </p>
               </div>
             ))}
           </div>
+
         </div>
       </section>
-</>
+    </>
   );
 }

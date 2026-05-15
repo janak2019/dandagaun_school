@@ -7,7 +7,7 @@ import Notices from "./components/sections/Notices";
 import Teachers from "./components/sections/Teachers";
 import Gallery from "./components/sections/Gallery";
 import Contact from "./components/sections/Contact";
-import { Link } from "react-router-dom";
+
 export default function App() {
   return (
     <>
