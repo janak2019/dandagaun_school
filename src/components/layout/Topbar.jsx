@@ -1,8 +1,4 @@
-import {
-  FaFacebookF,
-  FaYoutube,
-  FaTiktok,
-} from "react-icons/fa";
+import { FaFacebookF, FaYoutube, FaTiktok } from "react-icons/fa";
 
 export default function TopBar() {
   const today = new Date();
@@ -15,26 +11,26 @@ export default function TopBar() {
   });
 
   return (
-    <div className="bg-blue-900 text-white text-sm py-2 px-6">
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
+    <div className="bg-blue-900 text-white text-sm px-4 py-2">
+      
+      <div className="max-w-7xl mx-auto flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2">
 
-        {/* LEFT SIDE */}
-        <p className="hidden sm:block">
+        {/* DATE (mobile + desktop) */}
+        <p className="text-center sm:text-left text-xs sm:text-sm">
           🇳🇵 {nepaliDate}
         </p>
 
         {/* RIGHT SIDE */}
-        <div className="flex items-center gap-4">
+        <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
 
           {/* PHONE */}
-          <p className="hidden md:block">
+          <p className="text-xs sm:text-sm">
             📞 ०१-१२३४५६७
           </p>
 
           {/* SOCIAL ICONS */}
-          <div className="flex gap-3 text-lg">
+          <div className="flex gap-4 text-base sm:text-lg">
 
-            {/* FACEBOOK */}
             <a
               href="https://facebook.com"
               target="_blank"
@@ -44,7 +40,6 @@ export default function TopBar() {
               <FaFacebookF />
             </a>
 
-            {/* YOUTUBE */}
             <a
               href="https://youtube.com"
               target="_blank"
@@ -54,7 +49,6 @@ export default function TopBar() {
               <FaYoutube />
             </a>
 
-            {/* TIKTOK */}
             <a
               href="https://tiktok.com"
               target="_blank"
