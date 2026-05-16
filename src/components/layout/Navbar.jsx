@@ -18,62 +18,73 @@ export default function Navbar() {
   }`;
 
   return (
+  
+    
     <nav
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+      className={`fixed top-8 left-0 w-full z-50 transition-all duration-300 ${
         scrolled ? "bg-transparent shadow-lg py-3" : "bg-zinc-600 py-4"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-        
-        {/* LEFT SIDE */}
-        <div className="flex items-center gap-4">
-          {/* LOGO */}
-          <div className="w-12 h-12 rounded-full overflow-hidden shadow-md border-2 border-white">
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png"
-              alt="School Logo"
-              className="w-full h-full object-cover"
-            />
-          </div>
 
-          {/* TEXT */}
-          <div>
-            <h1
-              className={`text-lg md:text-2xl font-bold transition-colors duration-300 ${
-                scrolled ? "text-black" : "text-white"
-              }`}
-            >
-              डाँडागाउँ माध्यमिक विद्यालय
-            </h1>
+  {/* LEFT SIDE */}
+  <div className="flex items-center gap-4">
+    
+    {/* LOGO */}
+    <div className="w-12 h-12 rounded-full overflow-hidden shadow-md border-2 border-white">
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png"
+        alt="School Logo"
+        className="w-full h-full object-cover"
+      />
+    </div>
 
-            <p
-              className={`text-xs md:text-sm ${
-                scrolled ? "text-gray-700" : "text-gray-200"
-              }`}
-            >
-              उत्तरगया-२, डाँडागाउँ रसुवा
-            </p>
-          </div>
-        </div>
+    {/* TEXT */}
+    <div>
+      <h1
+        className={`text-lg md:text-2xl font-bold transition-colors duration-300 ${
+          scrolled ? "text-black" : "text-white"
+        }`}
+      >
+        डाँडागाउँ माध्यमिक विद्यालय
+      </h1>
 
-        {/* DESKTOP MENU */}
-        <div className="hidden md:flex gap-8 font-medium">
-          <a href="#home" className={linkClass}>गृहपृष्ठ</a>
-          <a href="#about" className={linkClass}>हाम्रो बारेमा</a>
-          <a href="#notices" className={linkClass}>सूचना</a>
-          <a href="#teachers" className={linkClass}>शिक्षक</a>
-          <a href="#gallery" className={linkClass}>ग्यालरी</a>
-          <a href="#contact" className={linkClass}>सम्पर्क</a>
-        </div>
+      <p
+        className={`text-xs md:text-sm ${
+          scrolled ? "text-gray-700" : "text-gray-200"
+        }`}
+      >
+        उत्तरगया-२, डाँडागाउँ रसुवा
+      </p>
+    </div>
+  </div>
 
-        {/* MOBILE BUTTON */}
-        <button
-          className="md:hidden text-white text-3xl"
-          onClick={() => setOpen(!open)}
-        >
-          ☰
-        </button>
-      </div>
+  {/* RIGHT SIDE */}
+  <div className="hidden lg:flex items-center gap-6">
+
+   
+
+    {/* DESKTOP MENU */}
+    <div className="flex gap-8 font-medium">
+      <a href="#home" className={linkClass}>गृहपृष्ठ</a>
+      <a href="#about" className={linkClass}>हाम्रो बारेमा</a>
+      <a href="#notices" className={linkClass}>सूचना</a>
+      <a href="#teachers" className={linkClass}>शिक्षक</a>
+      <a href="#gallery" className={linkClass}>ग्यालरी</a>
+      <a href="#contact" className={linkClass}>सम्पर्क</a>
+    </div>
+  </div>
+
+  {/* MOBILE BUTTON */}
+  <button
+    className={`md:hidden text-3xl ${
+      scrolled ? "text-black" : "text-white"
+    }`}
+    onClick={() => setOpen(!open)}
+  >
+    ☰
+  </button>
+</div>
 
       {/* MOBILE MENU */}
       {open && (
@@ -87,5 +98,6 @@ export default function Navbar() {
         </div>
       )}
     </nav>
+  
   );
 }
