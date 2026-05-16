@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaFacebookF, FaYoutube, FaTiktok } from "react-icons/fa";
+import NepaliDateTime from "./NepaliDateTime";
 
 export default function TopBar() {
   const [hidden, setHidden] = useState(false);
@@ -46,7 +47,7 @@ export default function TopBar() {
 
           {/* DATE */}
           <p className="text-xs sm:text-sm">
-            🇳🇵 {nepaliDate}
+            <NepaliDateTime />
           </p>
 
           {/* 🔥 SCROLLING NOTICE TICKER */}
