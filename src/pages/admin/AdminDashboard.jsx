@@ -6,7 +6,7 @@ export default function AdminDashboard() {
 
   const handleLogout = () => {
     localStorage.removeItem("adminAuth");
-    navigate("/admin/login");
+    navigate("/");
   };
 
   return (
